@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="RoverMovementData\" />
+    <Folder Include="RoverMovementData\DirectionData\" />
+    <Folder Include="Rover\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RoverFileProcessor\RoverFileProcessor.csproj" />
+  </ItemGroup>
+</Project>

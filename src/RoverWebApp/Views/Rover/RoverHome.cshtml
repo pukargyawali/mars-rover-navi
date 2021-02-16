@@ -1,0 +1,58 @@
+﻿<div class="jumbotron text-center">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <canvas id="roverCanvas"></canvas>
+                    <button type="button" id="start-rover-btn" class="btn btn-primary" onmousedown="moveRoverAsync()" ontouchstart="moveRover()">
+                        Start
+                        Rover
+                    </button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>    
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFileInput" aria-describedby="customFileInput">
+                        <label class="custom-file-label" for="customFileInput">Select file</label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="customFileInputBtn"
+                                name="roverControlFile">
+                            Upload
+                        </button>
+                    </div>
+                </div>
+                <div class="check-icon hidden">
+                    <img src="../img/check_icon.png" />
+                </div>
+                <div class="error-msg hidden">
+                    <small id="error-file-type" class="form-text text-muted">Unsupported file format. Please upload csv file</small>
+                </div>
+                <small id="emailHelp" class="form-text text-muted">Please only upload csv files</small>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="error-msg-api hidden">
+                    <p>Error while processing the file.Possible reasons are:</p>
+                    <ul>
+                        <li>Invalid input in the file</li>
+                        <li>Direction Information contains coordinates outside of the size of the graph</li>
+                        <li>Movement of the rover resulted in outside of the graph</li>
+                        <li>Unexpected error on serverside</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

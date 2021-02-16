@@ -1,0 +1,118 @@
+﻿
+<div class="jumbotron text-center">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Solution Overview
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h2>Structure of the solution</h2>
+                            <p>Solution for the Mars rover problem using Dot NET 5.0 for backend server processes and used MVC architectural pattern along with java script and jQuery to support user interactions</p>
+                            <p>Solution includes following project structure:</p>
+                            <ul>
+                                <li>RoverAppTests</li>
+                                <li>RoverControlService(project library)</li>
+                                <li>RoverFileProcessor(project library)</li>
+                                <li>RoverWebApp(dot NET core MVC application)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Run the Project
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <h3>Installing</h3>
+                            <p>
+                                Follow these steps to get your development environment set up: (Before Run Start the Docker Desktop)
+                            <p>You will need the following tools:</p>
+                            <ul>
+                                <li><a href="https://visualstudio.microsoft.com/downloads/" rel="nofollow">Visual Studio 2019</a></li>
+                                <li><a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" rel="nofollow">.Net Core 3.1 or later</a></li>
+                                <li><a href="https://www.docker.com/products/docker-desktop" rel="nofollow">Docker Desktop</a></li>
+                            </ul>
+                            <ol>
+                                <li>Clone the repository</li>
+                                <li>At the root directory which include <strong>docker-compose.yml</strong> files, run below command:</li>
+                            </ol>
+                            <br>
+                            <div class="highlight highlight-source-cs">
+                                <pre><span class="pl-smi">docker</span><span class="pl-k">-</span><span class="pl-smi">compose</span> <span class="pl-k">-</span><span class="pl-smi">f</span> <span class="pl-smi">docker</span><span class="pl-k">-</span><span class="pl-smi">compose</span>.<span class="pl-smi">yml</span> <span class="pl-k">-</span><span class="pl-smi">f</span> <span class="pl-smi">docker</span><span class="pl-k">-</span><span class="pl-smi">compose</span>.<span class="pl-smi">override</span>.<span class="pl-smi">yml</span> <span class="pl-smi">up</span> –<span class="pl-smi">d</span></pre>
+                            </div>
+                            <ol start="3">
+                                <li>
+                                    <p>You can <strong>launch Rover Navi</strong> as below url:</p>
+                                </li>
+                            </ol>
+                            <ul>
+                                <li><strong>Rover Navi -&gt; <a href="https://localhost:5001/" rel="nofollow">https://localhost:5001/</a></strong></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Assumptions
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                <h5>Origin of the graph:</h5>
+                            <p>To contruct the path of the rover in mars, the origin(0, 0) of the graph is assumed to be in TOP LEFT corner</p>
+                            <img src="../img/originDocumentation.jpg">
+                            <h5>Size of the plateu:</h5>
+                            <ul>
+                                <li>Width: 500</li>
+                                <li>Length: 1000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Limitations
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                <h5>Limitation and nice to haves:</h5> 
+                            <ul>
+                                <li>Application with its current state lacks strong defensive mechanism against DOS attacks</li>
+                                <li>Clean and Neat UI</li>
+                                <li>Authentication</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
