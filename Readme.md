@@ -2,6 +2,8 @@
 # mars-rover-navi
 
 Detail documentation is present in the documentation tab of the rover navi web application.
+![Screen Shot 2021-02-16 at 10 35 09 AM](https://user-images.githubusercontent.com/43736599/108057432-88cd9f80-704a-11eb-8456-593b907716f7.png)
+
 
 ### Here is a quick installation guide:
 
