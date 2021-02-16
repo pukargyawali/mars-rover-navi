@@ -50,21 +50,35 @@
                             </ul>
                             <ol>
                                 <li>Clone the repository</li>
-                                <li>At the root directory which include <strong>docker-compose.yml</strong> files, run below command:</li>
+                                <li>At the src directory, where folders for the projects are present </strong> run below command:</li>
                             </ol>
                             <br>
+                            <h5>With Docker File</h5>
                             <div class="highlight highlight-source-cs">
-                                <pre><span class="pl-smi">docker</span><span class="pl-k">-</span><span class="pl-smi">compose</span> <span class="pl-k">-</span><span class="pl-smi">f</span> <span class="pl-smi">docker</span><span class="pl-k">-</span><span class="pl-smi">compose</span>.<span class="pl-smi">yml</span> <span class="pl-k">-</span><span class="pl-smi">f</span> <span class="pl-smi">docker</span><span class="pl-k">-</span><span class="pl-smi">compose</span>.<span class="pl-smi">override</span>.<span class="pl-smi">yml</span> <span class="pl-smi">up</span> –<span class="pl-smi">d</span></pre>
+                                <pre><span class="pl-smi">docker</span><span class="pl-smi">build</span> <span class="pl-k">-</span><span class="pl-smi">f</span> <span class="pl-smi">RoverWebApp/DockerFile</span><span class="pl-k">-</span><span class="pl-smi">roverwebappimage</span> .
                             </div>
+                            <div class="highlight highlight-source-cs">
+                                <pre><span class="pl-smi">docker run -it --rm -p 50001:80 --name RoverWebApp roverwebappimage</span>
+                            </div>
+
+                            <br>
+                            <h5>Build Manually</h5>
+                            <p> At the root direction run following</p>
+                            <ul>
+                                <pre><span class="pl-smi">dotnet build</span>
+                            </ul>
+                            <p>Now navigate to webapp directory and run following</p>
+                            <ul>
+                                <pre><span class="pl-smi">dotnet run</span>
+                            </ul>
                             <ol start="3">
                                 <li>
                                     <p>You can <strong>launch Rover Navi</strong> as below url:</p>
                                 </li>
+                                <li>
+                                    <a href="https://localhost:5001">https://localhost:5001</a>
+                                </li>
                             </ol>
-                            <ul>
-                                <li><strong>Rover Navi -&gt; <a href="https://localhost:5001/" rel="nofollow">https://localhost:5001/</a></strong></li>
-
-                            </ul>
                         </div>
                     </div>
                 </div>
